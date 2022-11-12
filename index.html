@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temperature Convertor</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+	<h4>Please Enter Temperature to Convert here!</h4>
+	
+	<div class="fillInput">
+	<form id="form" onsubmit="calculate(); return false">
+	<input type="number" name="temp" id="inputTemp" />
+	<select name="Select" id="selectTemp">
+	<option value="celcius">Celcius</option>
+	<option value="fahrenheit">Fahrenheit</option>
+	</select><br /><br />
+	<!--Button Should be inside form tag not outside-->
+	<button id="btn" type="submit">Submit</button>
+	</form>
+	</div>
+	<p id="result"></p>
+	</main>
+
+	<script src="main.js"></script>
+</body>
+</html>
